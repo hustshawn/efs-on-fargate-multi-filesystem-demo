@@ -14,6 +14,7 @@ In this demo, I assume you have 2 group of tasks, `task-a` and `task-b`. Each of
 ## Setup
 1. Clone this repo locally.
 2. Replace the value of `volumeHandle` field with your EFS filesystem id inside `deploy/overlay/task-x/pv-pvc.yaml`.
+3. Setup [efs-csi-driver](https://aws.amazon.com/blogs/aws/new-aws-fargate-for-amazon-eks-now-supports-amazon-efs/) and create storage class by executing `kubectl apply -f setup/`
 
 
 ## Deploy
